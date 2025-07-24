@@ -1,70 +1,87 @@
-# ASSIGNMENT2
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Birthday Card</title>
-    <style>
-        body {
-            background: linear-gradient(135deg, #ff9a9e, #fad0c4);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            margin: 0;
-            font-family: 'Segoe UI', sans-serif;
-        }
-        .card {
-            background: white;
-            width: 400px;
-            padding: 30px;
-            border-radius: 15px;
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-            text-align: center;
-            animation: float 3s ease-in-out infinite;
-        }
-        @keyframes float {
-            0% { transform: translateY(0); }
-            50% { transform: translateY(-10px); }
-            100% { transform: translateY(0); }
-        }
-        .card h1 {
-            color: #ff6f91;
-            font-size: 2.5em;
-            margin-bottom: 10px;
-        }
-        .card p {
-            font-size: 1.2em;
-            color: #555;
-            margin-top: 0;
-        }
-        .cake {
-            font-size: 60px;
-            margin: 20px 0;
-        }
-        .btn {
-            background: #ff6f91;
-            color: white;
-            padding: 10px 20px;
-            text-decoration: none;
-            border-radius: 25px;
-            display: inline-block;
-            margin-top: 15px;
-            transition: background 0.3s;
-        }
-        .btn:hover {
-            background: #ff4f70;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <title>Weekly Timetable</title>
+  <style>
+    table {
+      width: 80%;
+      border-collapse: collapse;
+      margin: 20px auto;
+      font-family: Arial, sans-serif;
+    }
+    th, td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+    th {
+      background-color: #f2f2f2;
+    }
+    caption {
+      font-size: 24px;
+      margin: 10px;
+      font-weight: bold;
+    }
+  </style>
 </head>
 <body>
 
-<div class="card">
-    <div class="cake">🎂</div>
-    <h1>Happy Birthday!</h1>
-    <p>Wishing you a day filled with happiness, love, and sweet surprises!</p>
-    <a href="#" class="btn">Celebrate Now</a>
-</div>
+  <table>
+    <caption>Weekly Class Timetable</caption>
+    <thead>
+      <tr>
+        <th>Time</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>9:00 - 10:00</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+        <td>English</td>
+        <td>Biology</td>
+      </tr>
+      <tr>
+        <td>10:00 - 11:00</td>
+        <td>English</td>
+        <td>Math</td>
+        <td>Biology</td>
+        <td>Physics</td>
+        <td>Chemistry</td>
+      </tr>
+      <tr>
+        <td>11:00 - 12:00</td>
+        <td>Break</td>
+        <td>Break</td>
+        <td>Break</td>
+        <td>Break</td>
+        <td>Break</td>
+      </tr>
+      <tr>
+        <td>12:00 - 1:00</td>
+        <td>Computer</td>
+        <td>Math</td>
+        <td>Physics</td>
+        <td>English</td>
+        <td>Lab</td>
+      </tr>
+      <tr>
+        <td>1:00 - 2:00</td>
+        <td>Lab</td>
+        <td>Computer</td>
+        <td>Chemistry</td>
+        <td>Biology</td>
+        <td>Sports</td>
+      </tr>
+    </tbody>
+  </table>
 
 </body>
 </html>
